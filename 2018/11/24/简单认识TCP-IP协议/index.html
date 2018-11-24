@@ -139,7 +139,7 @@
 <meta property="og:image" content="http://pifyptn65.bkt.clouddn.com/%E9%9D%A2%E5%90%91%E6%9C%89%E6%8E%A5.png">
 <meta property="og:image" content="http://pifyptn65.bkt.clouddn.com/%E9%9D%A2%E5%90%91%E6%97%A0%E6%8E%A5.png">
 <meta property="og:image" content="http://pifyptn65.bkt.clouddn.com/d6ca7bcb0a46f21fd656b015f7246b600c33ae12.jpg.png">
-<meta property="og:updated_time" content="2018-11-24T08:26:58.618Z">
+<meta property="og:updated_time" content="2018-11-24T10:39:00.303Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单认识TCP&#x2F;IP协议">
 <meta name="twitter:description" content="前言：简单认识TCP/IP，不涉及具体的理论.">
@@ -469,11 +469,12 @@
 <p>4.应用层(Application Layer)包含所有的高层协议，包括：<br>1.虚拟终端协议(TELNET，TELecommunications NETwork),允许一台机器上的用户登录到远程机器上，并进行工作<br>2.文件传输协议(FTP，File Transfer Protocol),提供有效地将文件从,用于电子邮件的收发；<br>4.域名服务(DNS，Domain Name Service),用于把主机名映射到网络地址；<br>5.网上新闻传输协议(NNTP，Net News Transfer Protocol)、,用于新闻的发布、检索和获取；<br>6.超文本传送协议(HTTP，HyperText Transfer Protocol)等,用于在WWW上获取主页。 </p>
 </blockquote>
 <h6 id="一些基础知识"><a href="#一些基础知识" class="headerlink" title="一些基础知识"></a>一些基础知识</h6><blockquote>
-<h6 id="一-关于传输层有TCP与UDP两种协议"><a href="#一-关于传输层有TCP与UDP两种协议" class="headerlink" title="一.关于传输层有TCP与UDP两种协议"></a>一.关于传输层有TCP与UDP两种协议</h6><ol>
-<li>面向有连接型和面向无连接型的区别：<br>_①  TCP面向有接型：<img src="http://pifyptn65.bkt.clouddn.com/%E9%9D%A2%E5%90%91%E6%9C%89%E6%8E%A5.png" alt=""><br>发送数据之前，需要在收发主机之间建立一条通信线路，在通信传输前后，专门进行建立和断开连接的处理，如果与对端之间无法通信，可避免发送无谓的数据。即三次握手与四次挥手.网上搜索的,大多涉及专业知识，可以通过这个<a href="https://blog.csdn.net/violet_echo_0908/article/details/51440509" target="_blank" rel="noopener">故事</a>认识三次握手。</li>
+<h6 id="一-关于传输层有TCP与UDP两种协议"><a href="#一-关于传输层有TCP与UDP两种协议" class="headerlink" title="一.关于传输层有TCP与UDP两种协议"></a>一.关于传输层有TCP与UDP两种协议</h6></blockquote>
+<ol>
+<li><p>面向有连接型和面向无连接型的区别：<br>_①  TCP面向有接型：<img src="http://pifyptn65.bkt.clouddn.com/%E9%9D%A2%E5%90%91%E6%9C%89%E6%8E%A5.png" alt=""><br>发送数据之前，需要在收发主机之间建立一条通信线路，在通信传输前后，专门进行建立和断开连接的处理，如果与对端之间无法通信，可避免发送无谓的数据。即三次握手与四次挥手.网上搜索的,大多涉及专业知识，可以通过这个<a href="https://blog.csdn.net/violet_echo_0908/article/details/51440509" target="_blank" rel="noopener">故事</a>认识三次握手。</p>
+<p>_②  UDP面向无接型：<img src="http://pifyptn65.bkt.clouddn.com/%E9%9D%A2%E5%90%91%E6%97%A0%E6%8E%A5.png" alt=""><br>这种类型不要求建立和断开连接，发送端可任何时候发送数据，接收端也不知道自己何时从哪里接受数据，这种情况下，接收端需要时常确认是否收到数据，彼此也不需要确认对方是否存在.   </p>
+</li>
 </ol>
-</blockquote>
-<p>  _②  UDP面向无接型：<img src="http://pifyptn65.bkt.clouddn.com/%E9%9D%A2%E5%90%91%E6%97%A0%E6%8E%A5.png" alt=""><br>这种类型不要求建立和断开连接，发送端可任何时候发送数据，接收端也不知道自己何时从哪里接受数据，这种情况下，接收端需要时常确认是否收到数据，彼此也不需要确认对方是否存在.   </p>
 <p>2  优缺点：  </p>
 <p>  _① TCP：</p>
 <p>优点：可靠、稳定</p>
