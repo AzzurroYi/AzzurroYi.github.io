@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[hexo插入视频,音乐]]></title>
     <url>%2F2018%2F11%2F25%2FNike-Dream-Crazy%2F</url>
-    <content type="text"><![CDATA[插入视频 &lt;iframe height=600 width=1000 src=&quot;网址&quot; frameborder=0 allowfullscreen&gt; &lt;/iframe&gt; 插入音乐&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;网址&quot;&gt;]]></content>
+    <content type="text"><![CDATA[插入视频 &lt;iframe height=600 width=1000 src=&quot;网址&quot; frameborder=0 allowfullscreen&gt; &lt;/iframe&gt; 插入音乐&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;网址&quot;&gt; &lt;/iframe&gt;]]></content>
       <tags>
         <tag>hexo</tag>
       </tags>
