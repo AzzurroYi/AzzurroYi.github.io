@@ -134,16 +134,16 @@
 <meta property="og:site_name" content="Azzurro">
 <meta property="og:description" content="前言：简单认识TCP/IP，不涉及具体的理论.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://pifyptn65.bkt.clouddn.com/u81042353&fm=26&gp=0.jpg">
-<meta property="og:image" content="http://pifyptn65.bkt.clouddn.com/983980-20161121173924409-1128983178.png">
-<meta property="og:image" content="http://pifyptn65.bkt.clouddn.com/%E9%9D%A2%E5%90%91%E6%9C%89%E6%8E%A5.png">
-<meta property="og:image" content="http://pifyptn65.bkt.clouddn.com/%E9%9D%A2%E5%90%91%E6%97%A0%E6%8E%A5.png">
-<meta property="og:image" content="http://pifyptn65.bkt.clouddn.com/d6ca7bcb0a46f21fd656b015f7246b600c33ae12.jpg.png">
-<meta property="og:updated_time" content="2018-11-24T10:39:00.303Z">
+<meta property="og:image" content="https://i.loli.net/2018/12/29/5c2767be3570e.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/12/29/5c2768063023f.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/29/5c276807bf2e1.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/29/5c2768069114d.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/29/5c2768ed9e65a.png">
+<meta property="og:updated_time" content="2018-12-29T12:31:32.394Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单认识TCP&#x2F;IP协议">
 <meta name="twitter:description" content="前言：简单认识TCP/IP，不涉及具体的理论.">
-<meta name="twitter:image" content="http://pifyptn65.bkt.clouddn.com/u81042353&fm=26&gp=0.jpg">
+<meta name="twitter:image" content="https://i.loli.net/2018/12/29/5c2767be3570e.jpg">
 
 
 
@@ -447,12 +447,12 @@
       
 
       
-        <p><img src="http://pifyptn65.bkt.clouddn.com/u81042353&amp;fm=26&amp;gp=0.jpg" alt="TCP/IP"><br>  前言：简单认识TCP/IP，不涉及具体的理论.<br>  <a id="more"></a></p>
+        <p><img src="https://i.loli.net/2018/12/29/5c2767be3570e.jpg" alt="TCP/IP"><br>  前言：简单认识TCP/IP，不涉及具体的理论.<br>  <a id="more"></a></p>
 <h5 id="什么是TCP-IP"><a href="#什么是TCP-IP" class="headerlink" title="什么是TCP/IP"></a>什么是TCP/IP</h5><blockquote>
 <p>互联网协议（Internet Protocol Suite）是一个网络通信模型，以及一整个网络传输协议家族，为互联网的基础通信架构。它常被通称为TCP/IP协议族（英语：TCP/IP Protocol Suite，或TCP/IP Protocols），简称TCP/IP.它也常被视为是简化的七层OSI模型.  </p>
 </blockquote>
 <p>  下面这张图左边是OSI模型，右边是TCP/IP协议.</p>
-<p> <img src="http://pifyptn65.bkt.clouddn.com/983980-20161121173924409-1128983178.png" alt="图一"></p>
+<p> <img src="https://i.loli.net/2018/12/29/5c2768063023f.png" alt="图一"></p>
 <h5 id="为什么会有TCP-IP"><a href="#为什么会有TCP-IP" class="headerlink" title="为什么会有TCP/IP"></a>为什么会有TCP/IP</h5><blockquote>
 <p>在世界上各地，各种各样的电脑运行着各自不同的操作系统为大家服务，这些电脑在表达同一种信息的时候所使用的方法是千差万别。就好像圣经中上帝打乱了各地人的口音，让他们无法合作一样。计算机使用者意识到，计算机只是单兵作战并不会发挥太大的作用。只有把它们联合起来，电脑才会发挥出它最大的潜力。于是人们就想方设法的用电线把电脑连接到了一起。<br>但是简单的连到一起是远远不够的，就好像语言不同的两个人互相见了面，完全不能交流信息。因而他们需要定义一些共通的东西来进行交流，TCP/IP就是为此而生。TCP/IP不是一个协议，而是一个协议族的统称。里面包括了IP协议，IMCP协议，TCP协议，以及我们更加熟悉的http、ftp、pop3协议等等。电脑有了这些，就好像学会了外语一样，就可以和其他的计算机终端做自由的交流了。</p>
 </blockquote>
@@ -471,8 +471,8 @@
 <h6 id="一些基础知识"><a href="#一些基础知识" class="headerlink" title="一些基础知识"></a>一些基础知识</h6><blockquote>
 <h6 id="一-关于传输层有TCP与UDP两种协议"><a href="#一-关于传输层有TCP与UDP两种协议" class="headerlink" title="一.关于传输层有TCP与UDP两种协议"></a>一.关于传输层有TCP与UDP两种协议</h6></blockquote>
 <ol>
-<li><p>面向有连接型和面向无连接型的区别：<br>_①  TCP面向有接型：<img src="http://pifyptn65.bkt.clouddn.com/%E9%9D%A2%E5%90%91%E6%9C%89%E6%8E%A5.png" alt=""><br>发送数据之前，需要在收发主机之间建立一条通信线路，在通信传输前后，专门进行建立和断开连接的处理，如果与对端之间无法通信，可避免发送无谓的数据。即三次握手与四次挥手.网上搜索的,大多涉及专业知识，可以通过这个<a href="https://blog.csdn.net/violet_echo_0908/article/details/51440509" target="_blank" rel="noopener">故事</a>认识三次握手。</p>
-<p>_②  UDP面向无接型：<img src="http://pifyptn65.bkt.clouddn.com/%E9%9D%A2%E5%90%91%E6%97%A0%E6%8E%A5.png" alt=""><br>这种类型不要求建立和断开连接，发送端可任何时候发送数据，接收端也不知道自己何时从哪里接受数据，这种情况下，接收端需要时常确认是否收到数据，彼此也不需要确认对方是否存在.   </p>
+<li><p>面向有连接型和面向无连接型的区别：<br>_①  TCP面向有接型：<img src="https://i.loli.net/2018/12/29/5c276807bf2e1.png" alt=""><br>发送数据之前，需要在收发主机之间建立一条通信线路，在通信传输前后，专门进行建立和断开连接的处理，如果与对端之间无法通信，可避免发送无谓的数据。即三次握手与四次挥手.网上搜索的,大多涉及专业知识，可以通过这个<a href="https://blog.csdn.net/violet_echo_0908/article/details/51440509" target="_blank" rel="noopener">故事</a>认识三次握手。</p>
+<p>_②  UDP面向无接型：<img src="https://i.loli.net/2018/12/29/5c2768069114d.png" alt=""><br>这种类型不要求建立和断开连接，发送端可任何时候发送数据，接收端也不知道自己何时从哪里接受数据，这种情况下，接收端需要时常确认是否收到数据，彼此也不需要确认对方是否存在.   </p>
 </li>
 </ol>
 <p>2  优缺点：  </p>
@@ -498,7 +498,7 @@
 <p>端口的作用：我们知道，一台拥有IP地址的主机可以提供许多服务，比如Web服务、FTP服务、SMTP服务等，这些服务完全可以通过1个IP地址来实现。那么，主机是怎样区分不同的网络服务呢？显然不能只靠IP地址，因为IP 地址与网络服务的关系是一对多的关系。实际上是通过“IP地址+端口号”来区分不同的服务的。  </p>
 </blockquote>
 </blockquote>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="http://pifyptn65.bkt.clouddn.com/d6ca7bcb0a46f21fd656b015f7246b600c33ae12.jpg.png" alt=""></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="https://i.loli.net/2018/12/29/5c2768ed9e65a.png" alt=""></p>
 
       
     </div>
@@ -661,7 +661,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
