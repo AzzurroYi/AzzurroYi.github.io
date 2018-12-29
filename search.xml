@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[hexo插入视频,音乐]]></title>
-    <url>%2F2018%2F11%2F25%2FNike-Dream-Crazy%2F</url>
-    <content type="text"><![CDATA[插入视频 &lt;iframe height=600 width=1000 src=&quot;网址&quot; frameborder=0 allowfullscreen&gt; &lt;/iframe&gt; 插入音乐&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;网址&quot;&gt; &lt;/iframe&gt;]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
+    <title><![CDATA[第7周编程练习：多项式的加法]]></title>
+    <url>%2F2018%2F12%2F29%2F%E7%AC%AC7%E5%91%A8%E7%BC%96%E7%A8%8B%E7%BB%83%E4%B9%A0%EF%BC%9A%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%9A%84%E5%8A%A0%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950#include &lt;stdio.h&gt;void printReslut(int m, int c);int main()&#123; int c = 0; int m = 0; int i; int t=0; int isFirstOut =1; int count=0; int a[101] = &#123;0&#125;; for(t=0; t&lt;2; t++)&#123; ///输入数组 do&#123; scanf(&quot;%d %d&quot;, &amp;m, &amp;c); a[m] += c; &#125;while( m != 0); &#125; for(i=100; i&gt;=0; i--)&#123; m = i; c = a[i]; if(c != 0)&#123; count++; if(isFirstOut)&#123; ///首项的判断 printResult(m,c); isFirstOut = 0; &#125;else&#123; if( c &gt; 0)&#123; printf(&quot;+&quot;); ///前缀符号判断 &#125; printResult(m,c); &#125; &#125; &#125; if(count == 0)&#123; ///特殊情况：什么也没有 printf(&quot;0&quot;); &#125; &#125;void printResult(int m, int c)&#123; /// 定义一个输出函数 if( m!= 0)&#123; if(c != 1 )&#123; printf(&quot;%d&quot;, c); &#125; printf(&quot;x&quot;); if( m != 1)&#123; printf(&quot;%d&quot;, m); &#125; &#125;else&#123; printf(&quot;%d&quot;, c); &#125;&#125; 需要注意的地方： 怎样写输出函数？我一开始想的是把每一种的情况写出来，用if/else语句写出来…. 像这样最后当然是错的了..参考了其他人的程序，发现不需要写出每种cxm输出情况，可以一个一个输出c，x，m.很有意思的写法.. else if 和 else{if}相同吗？=_=不同! 在这里应该用else{if}.这里的else是非首项的入口，不应该再设置条件限制进入语句。这张图还有一个错误，即printResult的位置。pR应该在else后，不然的话，会重复出现首项。 符号的判断我一开始像这样写… 一遇到0就崩了。。。 总结： 这道题难在需要设置一个输出函数，输出应该简洁地需要一个一个输出。c!=0是整个多项式存在的前提，m!=0是x存在的前提。同时也要考虑m,c=1的情况。最后什么也没输出的情况也要考虑到。]]></content>
   </entry>
   <entry>
     <title><![CDATA[简单认识TCP/IP协议]]></title>
