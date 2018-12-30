@@ -126,21 +126,21 @@
 
 
 
-<meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950#include &amp;lt;stdio.h&amp;gt;void printReslut(int m, int c);int main()&amp;#123;	int c = 0;	int m = 0;	int i;	int t=0">
+<meta name="description" content=":)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第7周编程练习：多项式的加法">
 <meta property="og:url" content="http://yoursite.com/2018/12/29/第7周编程练习：多项式的加法/index.html">
 <meta property="og:site_name" content="Azzurro">
-<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950#include &amp;lt;stdio.h&amp;gt;void printReslut(int m, int c);int main()&amp;#123;	int c = 0;	int m = 0;	int i;	int t=0">
+<meta property="og:description" content=":)">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2018/12/29/5c27923538120.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/12/29/5c2794d66a4c5.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/12/29/5c27970dd5271.jpg">
 <meta property="og:image" content="https://i.loli.net/2018/12/29/5c27978f4560f.png">
-<meta property="og:updated_time" content="2018-12-29T15:57:49.394Z">
+<meta property="og:updated_time" content="2018-12-30T10:34:50.188Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第7周编程练习：多项式的加法">
-<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950#include &amp;lt;stdio.h&amp;gt;void printReslut(int m, int c);int main()&amp;#123;	int c = 0;	int m = 0;	int i;	int t=0">
+<meta name="twitter:description" content=":)">
 <meta name="twitter:image" content="https://i.loli.net/2018/12/29/5c27923538120.jpg">
 
 
@@ -423,7 +423,8 @@
       
 
       
-        <a id="more"></a>
+        <p>:)</p>
+<a id="more"></a>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">void printReslut(int m, int c);</span><br><span class="line">int main()&#123;</span><br><span class="line">	int c = 0;</span><br><span class="line">	int m = 0;</span><br><span class="line">	int i;</span><br><span class="line">	int t=0;</span><br><span class="line">	int isFirstOut =1;</span><br><span class="line">	int count=0;</span><br><span class="line">	int a[101] = &#123;0&#125;;</span><br><span class="line">	for(t=0; t&lt;2; t++)&#123;               ///输入数组</span><br><span class="line">		do&#123;</span><br><span class="line">			scanf(&quot;%d %d&quot;, &amp;m, &amp;c);</span><br><span class="line">			a[m] += c;</span><br><span class="line">		&#125;while( m != 0);     </span><br><span class="line">	&#125;</span><br><span class="line">	for(i=100; i&gt;=0; i--)&#123;</span><br><span class="line">		m = i; </span><br><span class="line">		c = a[i];</span><br><span class="line">		if(c != 0)&#123;</span><br><span class="line">			count++;</span><br><span class="line">			if(isFirstOut)&#123;              ///首项的判断</span><br><span class="line">			    printResult(m,c);</span><br><span class="line">			    isFirstOut = 0;</span><br><span class="line">			&#125;else&#123;</span><br><span class="line">				if( c &gt; 0)&#123;</span><br><span class="line">				printf(&quot;+&quot;);	         ///前缀符号判断</span><br><span class="line">				&#125;</span><br><span class="line">			    printResult(m,c);</span><br><span class="line">			&#125;							</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	if(count == 0)&#123;                     ///特殊情况：什么也没有</span><br><span class="line">		printf(&quot;0&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	 </span><br><span class="line">&#125;</span><br><span class="line">void printResult(int m, int c)&#123;         /// 定义一个输出函数</span><br><span class="line">	if( m!= 0)&#123;</span><br><span class="line">		if(c != 1 )&#123;</span><br><span class="line">			printf(&quot;%d&quot;, c);</span><br><span class="line">		&#125;</span><br><span class="line">	    printf(&quot;x&quot;);</span><br><span class="line">	    if( m != 1)&#123; </span><br><span class="line">	    printf(&quot;%d&quot;, m);</span><br><span class="line">		&#125; </span><br><span class="line">	&#125;else&#123;</span><br><span class="line">		printf(&quot;%d&quot;, c);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="需要注意的地方："><a href="#需要注意的地方：" class="headerlink" title="需要注意的地方："></a>需要注意的地方：</h4><ol>
 <li>怎样写输出函数？<br>我一开始想的是把每一种的情况写出来，用if/else语句写出来…. 像这样<br><img src="https://i.loli.net/2018/12/29/5c27923538120.jpg" alt="呵呵"><br>最后当然是错的了..参考了其他人的程序，发现不需要写出每种cxm输出情况，可以一个一个输出c，x，m.很有意思的写法..</li>
@@ -464,6 +465,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/30/第7周编程练习：寻找靶点/" rel="prev" title="第7周编程练习：寻找靶点">
+                第7周编程练习：寻找靶点 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -583,7 +588,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
